@@ -50,7 +50,7 @@ RewriteRule . /index.php [L]
 	Header set Referrer-Policy "no-referrer"
 	
 	## Content-Security-Policy (CSP)
-	Header set Content-Security-Policy "default-src 'none'; script-src 'self' https://fototour-und-technik.de 'unsafe-inline' 'unsafe-eval'; object-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://a.tile.openstreetmap.de https://b.tile.openstreetmap.de https://c.tile.openstreetmap.de https://d.tile.openstreetmap.de; media-src 'self'; child-src 'self'; font-src 'self' data: ; connect-src 'self'; frame-ancestors 'self'; base-uri 'none'; form-action 'self'"
+	Header set Content-Security-Policy "default-src 'none'; script-src 'self' https://fototour-und-technik.de 'unsafe-inline'; object-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://a.tile.openstreetmap.de https://b.tile.openstreetmap.de https://c.tile.openstreetmap.de https://d.tile.openstreetmap.de; media-src 'self'; child-src 'self'; worker-src 'self' blob:; font-src 'self' data: ; connect-src 'self'; frame-ancestors 'self'; base-uri 'none'; form-action 'self'"
 
 
 </IfModule>
